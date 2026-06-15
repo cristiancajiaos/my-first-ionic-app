@@ -16,4 +16,16 @@
 
   <ion-icon name="heart"></ion-icon>
   <ion-icon name="logo-ionic"></ion-icon>
+
+  <ion-button (click)="scrollToBottom()">
+    Scroll to Bottom
+  </ion-button>
+
+  @for (item of items; track $index; let i = $index) {
+    <ion-item>
+      <ion-label>
+        Item {{i+1}}
+      </ion-label>
+    </ion-item>
+  }
 </ion-content>
